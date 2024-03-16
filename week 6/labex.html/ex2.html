@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EX02</title>
+</head>
+<body>
+    <input type="text" id="txta">
+    <button onclick="hienthi()">
+        Hien thi
+    </button>
+</body>
+<script>
+    function hienthi() {
+       var txta = document.getElementById("txta").value;
+       if(txta == null || txta == "" || isNaN(txta))
+       document.write("<font color='red'>You must enter a number</font>");
+    }
+</script>
+
+</html>

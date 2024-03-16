@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html">
+    <title>Ex01</title>
+</head>
+<body>
+    <input type="text" id="txta">
+    <input type="text" id="txtb">
+    <button onclick="result()">
+        Result
+    </button>
+</body>
+<script>
+    function result() {
+        var txta = document.getElementById("txta").value;
+        var txtb = document.getElementById("txtb").value;
+    if (txta == null || txta == "" || isNaN(txta)) {
+        alert("Vui lòng nhập số a hợp lệ");
+        return;
+    }
+    if (txtb == null || txtb == "" || isNaN(txtb)) {
+        alert("vui lòng nhập số b hợp lệ");
+        return;
+    } else {
+        var result = parseFloat(txta) + parseFloat(txtb);
+        alert("result:\n" + 
+        txta + "+" + txtb + "=" + "\n" + result);
+    }
+    }
+</script>
+</html>
